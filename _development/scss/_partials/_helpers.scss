@@ -1,0 +1,225 @@
+.title-divider {
+	background: #fbfbfb;
+	display: block;
+	height: 4px;
+	width: 85px;
+}
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .valign {width: 100%;}
+}
+
+.page-overlay {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+}
+
+.white-overlay {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: -moz-linear-gradient(top, white 20%, rgba(255, 255, 255, 0.68) 46%, transparent 100%);
+  background: -webkit-linear-gradient(top, white 20%, rgba(255, 255, 255, 0.68) 46%, transparent 100%);
+  background: linear-gradient(to bottom, white 20%, rgba(255, 255, 255, 0.68) 46%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00000000',GradientType=0 );
+  z-index: 1;
+}
+
+.dark-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 56, 69, 0.65);
+}
+
+*::-webkit-scrollbar {
+  width: 10px !important; }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+    *::-webkit-scrollbar-track {
+      background: white; }
+
+      -moz-::selection {
+        background: #3FA7C6;
+        color: #fbfbfb; }
+
+        .text-center {text-align: center !important;}
+        .text-right {text-align: right !important;}
+        .text-left {text-align: left !important;}
+
+        .preloaded {width: 100%;}
+
+        ul li > i {margin-right: 5px;}
+
+        .quote {
+  //padding-right: 40px !important;
+  padding-left: 0 !important;
+}
+
+.progress-wrapper {width: 100%;}
+.progress-bar {
+  display: inline-block;
+  width: 100%;
+  height: 12px;
+  background: #e5e5e5;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+
+  .progress-line {
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 70%;
+    background: #4285F4;
+    z-index: 19;
+    display: block;
+    float: left;
+    height: 12px;
+    border-radius: 12px 0 0 12px;
+  }
+}
+
+.left {float: left !important;}
+.right {float: right !important;}
+.clearfix {clear: both;}
+
+//colors
+$red: rgba(255, 255, 255, 0);
+$white: #fff;
+
+//base styles
+
+.btn-1 {
+  text-align: center;
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease;
+}
+
+//default button
+.btn-1 {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 auto 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%; 
+  &:hover { text-decoration: none; }
+}
+
+.btn-1 {
+  background: darken($red, 1.5%);
+  font-weight: 100;
+  
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+  }
+}
+
+.btn-1:hover {
+  background: rgba($red, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #fbfbfb;
+  
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.section-divider
+{
+  @include inline-block;
+  padding: 60px 50px 50px;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  margin-bottom: -35px;
+
+  &:before {
+    content: "";
+    background: image-url("backgrounds/paper.jpg");
+    width: 105%;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 105%;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    @include transform(rotate(-1.5deg));
+  }
+}
+
+.row.medium-expanded {max-width: 85rem;}
+
+.transform-bottom {
+  transform-origin: bottom !important;
+  -webkit-transform-origin: bottom !important;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.relative {position: relative !important;}
+
+.overlayed:after {
+	content: "";
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}

@@ -1,0 +1,36 @@
+section.topics
+{
+	background: $white;
+	box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.3);
+
+	.topic
+	{
+		padding: 20px;
+
+		.topic-icon {
+			width: 60px;
+			height: 60px;
+			background: $primary;
+			border-radius: 50%;
+			font-size: 1.4em;
+			text-align: center;
+			line-height: 59px;
+			color: #fff;
+			margin: 0 auto 18px;
+		}
+
+		.topic-title {
+			font-size: 1.5em;
+			text-align: center;
+			color: #2F2F2F;
+			margin: 5px 0 10px;
+
+			h4 {font-weight: 300;}
+		}
+
+		.topic-text {
+			text-align: center;
+			font-size: .9em;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+nav.top-bar {
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	padding: 20px $page-padding;
+}
+
+nav.top-bar
+{
+	a.logo {
+		font-size: 1.4em;
+		position: relative;
+		bottom: -8px;
+		color: #fff;
+		float: left;
+	}
+
+	ul.links {
+		float: right;
+		background: none;
+		margin-bottom: 0;
+		margin-top: 11px;
+
+		li {
+			display: inline;
+			
+			a {
+				padding: 0 20px;
+				color: #fff;
+			}
+
+			a.wired {
+				padding: 12px 30px;
+				border: 2px solid;
+				margin-left: 15px;
+			}
+		}
+	}
+}

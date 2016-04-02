@@ -1,0 +1,53 @@
+@keyframes shake-it-baby {
+	0% {
+		transform: rotate(-2deg);
+		animation-timing-function: ease-in;
+	}
+	50% {
+		transform: rotate(3deg);
+		animation-timing-function: ease-out;
+	}
+}
+
+@-webkit-keyframes up-and-down 
+{
+	from {
+		-webkit-transform: translateY(0px);
+	}
+
+	50% {
+		-webkit-transform: translateY(10px);
+	}
+
+	to {
+		-webkit-transform: translateY(0px);
+	}
+}
+
+@-moz-keyframes up-and-down {
+	from {
+		-moz-transform: translateY(0px);
+	}
+
+	50% {
+		-moz-transform: translateY(10px);
+	}
+
+	to {
+		-moz-transform: translateY(0px);
+	}
+}
+
+@keyframes up-and-down {
+	from {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(10px);
+	}	
+
+	to {
+		transform: translateY(0px);
+	}
+}

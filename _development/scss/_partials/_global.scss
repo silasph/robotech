@@ -1,0 +1,17 @@
+$page-padding: 2.2rem;
+
+body {
+	font-family: $main-font;
+	color: #616161;
+}
+
+header, section, footer, main {
+	position: relative;
+	padding-right: $page-padding;
+	padding-left: $page-padding;
+}
+
+section {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
