@@ -27,14 +27,14 @@
 	</ul>
 </nav>
 
-<header class="fullscreen overlayed">
+<header class="fullscreen overlayed bg-parallax">
 	<div class="slogan">
 		<h1>Lorem ipsum dolor</h1>
 		<h5>consequet amet</h5>
 	</div>
 
 	<div class="kmore">
-		<a href="#!">
+		<a href="#kmore">
 			<span>Saiba mais</span>
 			<i class="fa fa-chevron-down"></i>
 		</a>

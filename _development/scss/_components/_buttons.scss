@@ -1,0 +1,30 @@
+.button
+{
+  background: none;
+  border: 2px solid;
+  border-radius: 30px;
+  padding: 13px 23px;
+  color: #5A5869;
+  text-transform: uppercase;
+
+  &:before {
+    color: $white;
+    font-family: "FontAwesome";
+    content: "\f013";
+    display: inline-block;
+    margin-right: -15px;
+    opacity: 0;
+    @include transition(.2s);
+    @include animation(fa-spin 2s infinite linear);
+  }
+
+  &:hover, &:focus, &:active {
+    background: $primary;
+    border-color: darken($primary, 3%);
+  }
+
+  &:hover:before {
+    opacity: 1;
+    margin-right: 15px;
+  }
+}

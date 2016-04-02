@@ -11,10 +11,9 @@ header
 		text-align: center;
 		z-index: 5;
 
-		h1 {
-			color: $white;
-			margin-bottom: -10px;
-		}
+		h1 {margin-bottom: -10px;}
+
+		h1, h5 {color: $white;}
 	}
 
 	.kmore {
