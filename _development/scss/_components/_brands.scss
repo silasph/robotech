@@ -1,0 +1,24 @@
+ul.logos
+{
+	text-align: center;
+
+	li {
+		display: inline-block;
+		list-style: none;
+
+		img {
+			max-width: 140px;
+			max-height: 65px;
+			margin: 0 27px;
+			@include filter(grayscale(1));
+			@include transform(scale(1));
+			@include transition(.2s);
+
+			&:hover {
+				@include transition(.2s);
+				@include filter(grayscale(0));
+				@include transform(scale(1.1));
+			}
+		}
+	}
+}

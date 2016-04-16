@@ -72,5 +72,25 @@
         <div class="medium-4 columns">
             <img class="sec-image" src="<?php echo BASE_URL . 'assets/img/abb.png' ?>" alt="Robô Abb">
         </div>
+    </div>
+</section>
 
+<section class="brands">
+    <div class="row expanded">
+        <ul class="logos">
+            <?php
+            $directory = "assets/img/brands/";
+            $images = glob($directory . "*.png");
+
+            foreach($images as $image)
+            {
+              echo "
+              <li>
+                <img src='{$image}'>
+              </li>
+              ";
+            }
+          ?>
+      </ul>
+  </div>
 </section>
