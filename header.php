@@ -5,22 +5,27 @@
 
 	<ul class="links">
 		<li>
-			<a href="#!">
+			<a href="#top">
 				Home
 			</a>
 		</li>
 		<li>
-			<a href="#!">
+			<a href="#about">
 				Sobre
 			</a>
 		</li>
 		<li>
-			<a href="#!">
+			<a href="#services">
+				Serviços
+			</a>
+		</li>
+		<li>
+			<a href="#clients">
 				Clientes
 			</a>
 		</li>
 		<li>
-			<a class="wired" href="#!">
+			<a class="wired" href="#contact">
 				Contato
 			</a>
 		</li>
@@ -34,7 +39,7 @@
 	</div>
 
 	<div class="kmore">
-		<a href="#kmore">
+		<a href="#about">
 			<span>Saiba mais</span>
 			<i class="fa fa-chevron-down"></i>
 		</a>

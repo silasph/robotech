@@ -5,7 +5,14 @@ nav.top-bar {
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	padding: 20px $page-padding;
+	padding: 20px $page-padding 32px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	@include transition(.3s);
+
+	&.scroll {
+		background: $primary;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	}
 }
 
 nav.top-bar

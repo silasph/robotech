@@ -56,3 +56,11 @@ section.middle
 		max-height: 600px;
 	}
 }
+
+section.contact 
+{
+	background: url("../img/backgrounds/pattern.png");
+
+	.section-title {margin-bottom: 42px;}
+	p {color: $primary;}
+}

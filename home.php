@@ -1,4 +1,4 @@
-<section class="topics" id="kmore">
+<section class="topics" id="about">
     <div class="row">
         <div class="medium-4 columns topic">
             <div class="topic-icon">
@@ -41,7 +41,7 @@
     </div>
 </section>
 
-<section class="middle bg-parallax">
+<section class="middle bg-parallax" id="services">
     <div class="row expanded">
         <div class="medium-6 medium-offset-2 columns text-center fullscreen valign-wrapper">
             <div class="valign">
@@ -75,7 +75,7 @@
     </div>
 </section>
 
-<section class="brands">
+<section class="brands" id="clients">
     <div class="row expanded">
         <ul class="logos">
             <?php
@@ -93,4 +93,31 @@
           ?>
       </ul>
   </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="row expanded">
+    <h1 class="section-title text-center">Fale conosco</h1>
+        <div class="medium-6 medium-offset-3">
+            <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="*Nome">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="*Email">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Telefone">
+                </div>
+                <div class="input-wrapper">
+                    <textarea rows="3" placeholder="*Mensagem"></textarea>
+                </div>
+
+                <div class="button-wrapper">
+                    <a class="button send-message" href="#!">Enviar</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>

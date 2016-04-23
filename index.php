@@ -9,7 +9,7 @@
 	<?php require_once(PATH.'/static/styles.php'); ?>
 </head>
 
-<body>
+<body id="top">
 	<!-- header -->
 	<?php require_once(PATH.'/header.php'); ?>
 

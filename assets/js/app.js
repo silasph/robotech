@@ -3,7 +3,7 @@ $(document).ready(function () {
     fullscreen('.fullscreen');
 
     anchorLinks();
-
+    goTop();
     onScroll();
 
     backgroundParallax('.bg-parallax');
@@ -12,6 +12,25 @@ $(document).ready(function () {
         fullscreen('.fullscreen');
     });
 });
+
+function goTop()
+{
+    var wh = $(window).height()/2;
+    var $gotop = $('.go-top');
+
+    $(window).scroll(function() {
+        if($(window).scrollTop() > wh) {
+            $gotop.fadeIn();
+        } else {
+            $gotop.fadeOut();
+        }
+    });
+
+    $gotop.click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+  });
+}
 
 function fullscreen(selector)
 {
@@ -37,6 +56,12 @@ function onScroll()
         } else {
             $('header .slogan').fadeIn('slow');
         }
+
+        if($(window).scrollTop() >= ($(window).height()-65)) {
+            $('nav.top-bar').addClass('scroll');
+        } else {
+            $('nav.top-bar').removeClass('scroll');
+        }
     });
 }
 
@@ -44,7 +69,7 @@ function anchorLinks()
 {
     $('a').click(function(){
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
+            scrollTop: $( $.attr(this, 'href') ).offset().top-65
         }, 500);
         return false;
     });
